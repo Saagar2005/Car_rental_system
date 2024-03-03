@@ -25,6 +25,8 @@ A manager can add new cars. He can update and delete the cars as well. He can vi
 A manager can add new customers and employees. He can update their profile, clear their dues and get a rented car returned. He cannot delete a customer/employee until they return all cars they have rented.
 At any time, he can view their details including the number of cars rented and the dues.
 
+A manager can also add and delete other managers. However, he can update his own profile only. Note that the system does not allow deleting a manager when only one manager is left.
+
 ### Customer and Employee:
 
 A customer/employee can view his profile, the details of the cars he is currently renting and the cars available for rent. He can rent a car provided his record score satisfies the necessary conditon. However, he has to contact a manager to return a car, clear his dues or to update his profile.
@@ -37,7 +39,7 @@ The record score is calculated as follows:
 
    Let t be the total number of cars rented so far.
    Let d be the number of cars returned with damage.
-   Let x be the number of days a rented car is used beyond the due date.
+   Let x be the number of days any rented car is used beyond the due date.
 
    Then, record score = (t-(d+x/10))/t
 
@@ -46,7 +48,7 @@ The record score is calculated as follows:
    An employee/ a customer can rent atmost n cars where n is the ceil of [(record_score-m)*10]. 
    For a new employee/customer, the record score used to rent his first car will be m+0.1.
 
-## Assumptions:
+### Assumptions:
 
 1) The manager ensures the ID of no two users match. The ID of no two cars match.
 2) The user gives the correct type of input. For example, when the user is expected to enter an integer, he enters an integer.
