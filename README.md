@@ -1,6 +1,10 @@
 # Car_rental_system
 
-This is a Car rental system implemented purely using C++. Here, we dive into object oriented programming. Various concepts such as data encapsulation, polymorphism and inheritance have been implemented through the use of access specifiers, friend functions, virtual functions, static variables and multi-level inheritance of classes. File handling has been used to maintain and handle databases.
+This is a Car rental system implemented purely using C++. Here, we dive into object oriented programming. Various concepts such as data encapsulation, polymorphism and inheritance have been implemented through the use of access specifiers, friend functions, virtual functions, static variables and multi-level inheritance of classes. CSV files have used to maintain databases. File handling has been used to handle databases.
+
+## Structure
+
+All the database files can be found (with some initial entries) in the 'Database files' directory. The Car_rental_sysytem.cpp file constitutes the main controller of our system.
 
 ## How to run the system?
 
