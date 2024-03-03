@@ -28,6 +28,8 @@
    For a new employee/customer, the record score used to rent his first car will be m+0.1.
 */
 
+// In this file various check points are used to transfer control from one part to another part of the program. All of them use a label that begins with 'CP'.
+
 using namespace std;
 
 // PART 1 - CLASSES ................................................................................
@@ -637,7 +639,7 @@ void Manager:: manager_portal()
                     }
                     else
                     {
-                      employeeDB.Display_row(user_ID); //Ignoring return value since file will always be found
+                      employeeDB.Display_row(user_ID); 
                       cout<<"Are you sure you want to update? [y=yes/ any other character= no]"<<endl;
                       cin>>c;
                       if(c=='y'|| c=='Y')
@@ -911,7 +913,7 @@ void Manager:: manager_portal()
                       cin>>c;
                       if(c=='y'|| c=='Y')
                       {
-                        customerDB.Delete_row(user_ID);  //Ignoring return value since file will always be found
+                        customerDB.Delete_row(user_ID);  
                         cout<<"Successfully deleted customer!\n"<<endl;
                       }
                       else
