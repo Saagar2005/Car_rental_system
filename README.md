@@ -12,7 +12,7 @@ All the database files can be found (with some initial entries) in the 'Database
 C++ compiler
 
 ### Steps
-1) Download the Car_rental_system.cpp file and Database files from this repository.
+1) Download the Car_rental_system.cpp file and database files from this repository.
 2) Ensure all of them reside in the same directory.
 3) Run the Car_rental_system.cpp file and interact with the system on your terminal.
 
